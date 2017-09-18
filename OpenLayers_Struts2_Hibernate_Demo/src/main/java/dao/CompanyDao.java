@@ -16,8 +16,8 @@ public class CompanyDao {
             Query query = session.createQuery(HQL);
             return query.getResultList();
         }finally {
-            if (session != null)
-                session.close();
+//            if (session != null)
+//                session.close();
         }
     }
 }
