@@ -8,7 +8,7 @@
     <constant name="struts.configuration.xml.reload" value="true" />
 
     <package name="default" extends="json-default" namespace="/">
-        <action name="companyAction" class="action.CompanyAction">
+        <action name="serv" class="action.CompanyAction">
             <result type="json">
                 <param name="root">result</param>
             </result>

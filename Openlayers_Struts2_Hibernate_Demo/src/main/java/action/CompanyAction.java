@@ -1,4 +1,4 @@
-package controller;
+package action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import dao.CompanyDao;
@@ -8,7 +8,7 @@ import net.sf.json.JSONObject;
 
 import java.util.List;
 
-public class CompanySrv extends ActionSupport {
+public class CompanyAction extends ActionSupport {
     private String province;
     private String result;
 

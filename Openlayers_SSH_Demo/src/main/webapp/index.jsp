@@ -36,7 +36,7 @@
     function ajaxLoadSrv() {
         $.ajax({
             type: "POST",
-            url:"companyAction.action",
+            url:"serv.action",
             produces:"text/html;charset=UTF-8",
             data:{province:$("#ProvinceID").val()},
             error: function(request) {

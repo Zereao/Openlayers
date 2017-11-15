@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Openlayers_JDBC_Servlet_Demo" />
+        <module name="Openlayers_SSH_Demo" />
         <module name="Openlayers_Struts2_Hibernate_Demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="Openlayers_JDBC_Servlet_Demo" target="1.8" />
+      <module name="Openlayers_SSH_Demo" target="1.8" />
       <module name="Openlayers_Struts2_Hibernate_Demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
