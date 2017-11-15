@@ -2,11 +2,13 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Openlayers_JDBC_Servlet_Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/Openlayers_Struts2_Hibernate_Demo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Openlayers_JDBC_Servlet_Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Openlayers_Struts2_Hibernate_Demo/pom.xml" />
       </list>
     </option>
   </component>

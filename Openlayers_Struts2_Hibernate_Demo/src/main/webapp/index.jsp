@@ -1,13 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <html>
 <head>
-    <title>OpenLayers_Servlet_Demo</title>
+    <title>OpenLayers_Hibernate_Struts2_Demo</title>
     <link href="resources/css/ol.css" rel="stylesheet" type="text/css"/>
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
     <script src="resources/js/ol.js" type="text/javascript"></script>
-
-
     <script src="resources/js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
 
@@ -39,7 +36,7 @@
     function ajaxLoadSrv() {
         $.ajax({
             type: "POST",
-            url:"/servlet/CompanyServlet",
+            url:"serv.action",
             produces:"text/html;charset=UTF-8",
             data:{province:$("#ProvinceID").val()},
             error: function(request) {
