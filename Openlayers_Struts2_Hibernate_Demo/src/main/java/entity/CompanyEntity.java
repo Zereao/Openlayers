@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @javax.persistence.Entity
 @Table(name = "openlayers_demo", schema = "learn_demos")
-public class Entity {
+public class CompanyEntity {
     private int id;
     private String name;
     private Integer code;

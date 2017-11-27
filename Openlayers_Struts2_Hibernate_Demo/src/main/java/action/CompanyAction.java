@@ -2,7 +2,7 @@ package action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import dao.CompanyDao;
-import entity.Entity;
+import entity.CompanyEntity;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
@@ -17,9 +17,9 @@ public class CompanyAction extends ActionSupport {
     @Override
     public String execute() throws Exception {
         CompanyDao dao = new CompanyDao();
-        List<Entity> resultList = dao.getData(province);
+        List<CompanyEntity> resultList = dao.getData(province);
 
-        for(Entity companyEntity : resultList){
+        for(CompanyEntity companyEntity : resultList){
             JSONObject jsonObj = createJsonObj(companyEntity);
             jsonArray.add(jsonObj);
         }
@@ -35,7 +35,7 @@ public class CompanyAction extends ActionSupport {
         this.result = result;
     }
 
-    private JSONObject createJsonObj(Entity companyEntity){
+    private JSONObject createJsonObj(CompanyEntity companyEntity){
         JSONObject jsonObject = new JSONObject();
 
         jsonObject.put("name",companyEntity.getName());
