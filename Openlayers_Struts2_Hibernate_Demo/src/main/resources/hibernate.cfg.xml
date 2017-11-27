@@ -13,6 +13,6 @@
         <property name="hibernate.format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="entity.Entity"/>
+        <mapping class="entity.CompanyEntity"/>
     </session-factory>
 </hibernate-configuration>

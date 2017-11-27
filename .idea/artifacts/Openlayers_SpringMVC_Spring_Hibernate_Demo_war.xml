@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Openlayers_SpringMVC_Spring_Hibernate_Demo:war">
+    <output-path>$PROJECT_DIR$/Openlayers_SpringMVC_Spring_Hibernate_Demo/target</output-path>
+    <root id="archive" name="Openlayers_SpringMVC_Spring_Hibernate_Demo.war">
+      <element id="artifact" artifact-name="Openlayers_SpringMVC_Spring_Hibernate_Demo:war exploded" />
+    </root>
+  </artifact>
+</component>

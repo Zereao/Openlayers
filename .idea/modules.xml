@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Openlayers_JDBC_Servlet_Demo/Openlayers_JDBC_Servlet_Demo.iml" filepath="$PROJECT_DIR$/Openlayers_JDBC_Servlet_Demo/Openlayers_JDBC_Servlet_Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Openlayers_SSH_Demo/Openlayers_SSH_Demo.iml" filepath="$PROJECT_DIR$/Openlayers_SSH_Demo/Openlayers_SSH_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Openlayers_SpringMVC_Spring_Hibernate_Demo/Openlayers_SpringMVC_Spring_Hibernate_Demo.iml" filepath="$PROJECT_DIR$/Openlayers_SpringMVC_Spring_Hibernate_Demo/Openlayers_SpringMVC_Spring_Hibernate_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Openlayers_SpringMVC_Spring_MyBatis_Demo/Openlayers_SpringMVC_Spring_MyBatis_Demo.iml" filepath="$PROJECT_DIR$/Openlayers_SpringMVC_Spring_MyBatis_Demo/Openlayers_SpringMVC_Spring_MyBatis_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Openlayers_Struts2_Hibernate_Demo/Openlayers_Struts2_Hibernate_Demo.iml" filepath="$PROJECT_DIR$/Openlayers_Struts2_Hibernate_Demo/Openlayers_Struts2_Hibernate_Demo.iml" />
     </modules>
   </component>
