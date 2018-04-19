@@ -45,10 +45,10 @@ buildNumber.properties
 # 解决各类编辑器自动产生的文件
 ######################
 
-# *.iml
+*.iml
 
 ## Directory-based project format:
-# .idea/
+.idea/
 
 
 # if you remove the above rule, at least ignore the following:
