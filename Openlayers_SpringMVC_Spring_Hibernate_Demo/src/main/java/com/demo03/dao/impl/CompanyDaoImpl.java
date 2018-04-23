@@ -17,18 +17,22 @@ public class CompanyDaoImpl implements CompanyDao {
 
     @Autowired
     public CompanyDaoImpl(SessionFactory sessionFactory) {
+        System.out.println(sessionFactory);
         this.sessionFactory = sessionFactory;
     }
 
     private Session getSession() {
+        System.out.println("++++++++++++++++++++++++++");
+        System.out.println(sessionFactory == null);
+        System.out.println("++++++++++++++++++++++++++");
         return sessionFactory.getCurrentSession();
     }
 
     @Override
     public List<CompanyEntity> getData(String province) {
-        province = "上海";
-        String HQL = "from CompanyEntity where province LIKE '%" + province + "%'";
+        String HQL = "from CompanyEntity where province like '%" + province + "%'";
         System.out.println("#" + HQL + "#");
+        System.out.println(getSession());
         Query query = getSession().createQuery(HQL);
         List list = query.list();
         System.out.println(list);

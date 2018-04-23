@@ -22,7 +22,7 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    @Transactional
+    @Transactional(readOnly = true)
     public JSONArray getCompanyByProvince(String province) {
         List<CompanyEntity> resultList = companyDao.getData(province);
         System.out.println(resultList.toString());
