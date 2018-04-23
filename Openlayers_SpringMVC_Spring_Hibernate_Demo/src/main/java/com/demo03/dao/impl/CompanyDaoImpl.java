@@ -22,20 +22,14 @@ public class CompanyDaoImpl implements CompanyDao {
     }
 
     private Session getSession() {
-        System.out.println("++++++++++++++++++++++++++");
-        System.out.println(sessionFactory == null);
-        System.out.println("++++++++++++++++++++++++++");
         return sessionFactory.getCurrentSession();
     }
 
     @Override
     public List<CompanyEntity> getData(String province) {
-        String HQL = "from CompanyEntity where province like '%" + province + "%'";
-        System.out.println("#" + HQL + "#");
-        System.out.println(getSession());
+        String HQL = "from CompanyEntity where province LIKE '%" + province + "%'";
         Query query = getSession().createQuery(HQL);
         List list = query.list();
-        System.out.println(list);
         //noinspection unchecked
         return query.getResultList();
     }
