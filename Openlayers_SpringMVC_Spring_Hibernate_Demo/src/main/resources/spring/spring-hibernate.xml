@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- database Config-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${db.driverClass}"/>
+        <property name="jdbcUrl" value="${db.jdbcUrl}"/>
+        <property name="user" value="${db.user}"/>
+        <property name="password" value="${db.password}"/>
+        <property name="initialPoolSize" value="${db.initialPoolSize}"/>
+        <property name="minPoolSize" value="${db.minPoolSize}"/>
+        <property name="maxPoolSize" value="${db.maxPoolSize}"/>
+        <property name="maxStatements" value="${db.maxStatements}"/>
+    </bean>
+
+    <!-- Hibernate SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:hibernate/hibernate.cfg.xml"/>
+        <property name="packagesToScan" value="com.demo03.entity"/>
+    </bean>
+
+    <!-- Hibernate's TransactionManager -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+</beans>

@@ -7,12 +7,12 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/learn_demos?useSSL=false&amp;serverTimezone=UTC&amp;characterEncoding=utf-8</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.username">root</property>
-        <property name="connection.password"></property>
+        <property name="connection.password">YOUR_PASSWORD</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
         <property name="show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="entity.CompanyEntity"/>
+        <mapping class="com.demo02.entity.CompanyEntity"/>
     </session-factory>
 </hibernate-configuration>

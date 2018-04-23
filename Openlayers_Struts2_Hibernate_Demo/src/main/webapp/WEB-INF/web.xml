@@ -9,8 +9,9 @@
         <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
         <init-param>
             <param-name>config</param-name>
-            <param-value>struts-default.xml,struts-plugin.xml,../../resources/xml/struts.xml</param-value>
+            <param-value>struts-default.xml,struts-plugin.xml,struts.xml</param-value>
             <!-- ↑ 这里是相对于  WEB-INF/class/ 路径的相对路径 -->
+            <!-- 在这里错误了很久，原因：之前我写的是 struts-default.xml,struts-plugin.xml,classpath:struts.xml  -->
         </init-param>
     </filter>
 

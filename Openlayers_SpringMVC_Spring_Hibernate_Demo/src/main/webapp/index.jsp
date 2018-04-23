@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>OpenLayers_Hibernate_Struts2_Demo</title>
-    <link href="resources/css/ol.css" rel="stylesheet" type="text/css"/>
-    <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <script src="resources/js/ol.js" type="text/javascript"></script>
-    <script src="resources/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="webResources/css/ol.css" rel="stylesheet" type="text/css"/>
+    <link href="webResources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="webResources/js/ol.js" type="text/javascript"></script>
+    <script src="webResources/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="webResources/js/bootstrap.min.js" type="text/javascript"></script>
 
     <style type="text/css">
         #map {
@@ -86,7 +86,7 @@
         });
         anchor.setStyle(new ol.style.Style({
             image: new ol.style.Icon({
-                src: '/resources/img/tag.png'
+                src: 'webResources/img/tag.png'
             })
         }));
         layer.getSource().addFeature(anchor);
