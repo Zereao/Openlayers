@@ -17,7 +17,6 @@ public class CompanyDaoImpl implements CompanyDao {
 
     @Autowired
     public CompanyDaoImpl(SessionFactory sessionFactory) {
-        System.out.println(sessionFactory);
         this.sessionFactory = sessionFactory;
     }
 

@@ -1,6 +1,7 @@
-package com.demo03.controller;
+package com.demo04.controller;
 
-import com.demo03.service.CompanyService;
+
+import com.demo04.service.CompanyService;
 import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,8 +21,8 @@ public class CompanyController {
 
     @RequestMapping("/get")
     @ResponseBody
-    public JSONArray get(@RequestParam String province) {
-        return companyService.getCompanyByProvince(province);
+    public String get(@RequestParam("province") String province) {
+        JSONArray jsonArray = companyService.getCompanyByProvince(province);
+        return jsonArray.toString();
     }
-
 }

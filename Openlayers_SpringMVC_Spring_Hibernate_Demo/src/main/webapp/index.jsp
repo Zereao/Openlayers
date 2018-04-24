@@ -32,8 +32,6 @@
 </div>
 </body>
 <script>
-    var dataCompany;
-
     function ajaxLoadSrv() {
         $.ajax({
             type: "POST",
@@ -44,8 +42,7 @@
                 alert("Connection error");
             },
             success: function (data) {
-                dataCompany = JSON.parse(data);
-                addHitArray(dataCompany);
+                addHitArray(data);
             }
         });
     }

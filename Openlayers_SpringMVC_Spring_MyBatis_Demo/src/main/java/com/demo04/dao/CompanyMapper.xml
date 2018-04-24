@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo04.dao.CompanyDao">
+    <resultMap id="BaseResultMap" type="com.demo04.model.CompanyEntity">
+        <constructor>
+            <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="code" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <arg column="address" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="x_intercept" javaType="java.lang.Float" jdbcType="REAL"/>
+            <arg column="y_intercept" javaType="java.lang.Float" jdbcType="REAL"/>
+            <arg column="province" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        </constructor>
+    </resultMap>
+
+</mapper>
